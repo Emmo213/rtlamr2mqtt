@@ -580,6 +580,7 @@ if __name__ == "__main__":
                         else:
                             msg_payload = formatted_reading
 
+                        attributes['Time'] = json_output['Time']
                         attributes['Message Type'] = json_output['Type']
                         attributes.update(json_output['Message'])
                         attribute_topic = meters[meter_id]['attribute_topic']
